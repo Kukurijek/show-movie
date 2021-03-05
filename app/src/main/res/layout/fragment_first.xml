@@ -31,8 +31,9 @@
                 android:id="@+id/textview_first"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginBottom="165dp"
-                android:text="@string/hello_first_fragment" />
+                android:layout_marginBottom="180dp"
+                android:text="@string/hello_first_fragment"
+                android:textAlignment="center" />
 
             <RatingBar
                 android:id="@+id/ratingBar"
