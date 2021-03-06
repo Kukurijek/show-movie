@@ -6,12 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.RatingBar
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class FirstFragment : Fragment() {
+
+    lateinit var binding: Movie
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = Movie()
+    }
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
@@ -21,8 +29,18 @@ class FirstFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_first, container, false)
     }
 
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        view.findViewById<TextView>(R.id.textview_first).apply {
+             text = binding.title
+        }
+        view.findViewById<RatingBar>(R.id.ratingBar).apply {
+            rating = binding.rating
+        }
+
 
       //  view.findViewById<Button>(R.id.button_first).setOnClickListener {
       //      findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
