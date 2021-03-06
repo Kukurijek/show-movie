@@ -42,17 +42,35 @@
             <TextView
                 android:id="@+id/textview_first"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="36dp"
                 android:layout_marginBottom="180dp"
                 android:text="@string/hello_first_fragment"
                 android:textAlignment="center" />
 
             <RatingBar
                 android:id="@+id/ratingBar"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+
+            <TextView
+                android:id="@+id/textView_creators"
+                android:layout_width="220dp"
+                android:layout_height="41dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView2_actors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView3_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
 
         </LinearLayout>
     </ScrollView>

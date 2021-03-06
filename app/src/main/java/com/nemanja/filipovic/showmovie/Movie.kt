@@ -5,6 +5,6 @@ data class Movie (
     var description: String = "Drama",
     var rating: Float = 3.7182818284f,
     var genres: String? = null,
-    var creatorsAuthors: String = "Steven Spielberg;",
+    var creatorsAuthors: String = "Steven Spielberg",
     var actors: String = "Leonardo DiCaprio"
 )
